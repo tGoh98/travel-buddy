@@ -11,6 +11,8 @@ import FirebaseDatabase
 struct RecSeats: View {
     @EnvironmentObject var modelData: ModelData
     @State private var seats: [Seat] = []
+    @Binding var internalStep: Int
+    @Binding var selectedTab: Int
     var body: some View {
         HStack {
             VStack {
@@ -33,7 +35,8 @@ struct RecSeats: View {
                 SeatCard(seat1: Seat(row: 11, seat: "F", type: "middle", ticketClass: "preferred", price: 35), seat2: Seat(row: 11, seat: "E", type: "aisle", ticketClass: "preferred", price: 35))
                 Spacer()
                 Button (action: {
-                    
+                    internalStep = 0
+                    selectedTab = 1
                 }){
                     TextElem(str: "Continue", fontSize: 17)
                         .foregroundColor(Color.init(hex: "FFFFFF"))
@@ -41,15 +44,15 @@ struct RecSeats: View {
                 .frame(width: 279, height: 46.95)
                 .background(Color.init(hex: "0E57BD"))
                 .clipShape(RoundedCorner(radius: 35))
-                .offset(y:-20)
-//                Spacer()
+                .offset(y:-50)
+                //                Spacer()
             }
         }
         .background(Color.white)
         .frame(width: .infinity, height: .infinity)
         .onAppear() {
             let url = URL(string: "http://192.168.1.118:4000/seats/rec?user1=\(modelData.username)&user2=\(modelData.matchedUsername)")
-//            let url = URL(string: "http://localhost:4000/seats/rec?user1=alphabear&user2=\(modelData.matchedUsername)")
+            //            let url = URL(string: "http://localhost:4000/seats/rec?user1=alphabear&user2=\(modelData.matchedUsername)")
             print("http://localhost:4000/seats/rec?user1=\(modelData.username)&user2=\(modelData.matchedUsername)")
             var request = URLRequest(url: url!)
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -72,6 +75,6 @@ struct RecSeats: View {
 
 struct RecSeats_Previews: PreviewProvider {
     static var previews: some View {
-        RecSeats()
+        RecSeats(internalStep: .constant(1), selectedTab: .constant(1))
     }
 }

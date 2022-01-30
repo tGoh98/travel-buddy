@@ -36,7 +36,8 @@ struct Chatroom: View {
                 ReviewMatch(internalStep: $internalStep, matchee: modelData.matchedName)
             } else if (internalStep == 7) {
             } else if (internalStep == 8) {
-                RecSeats().environmentObject(modelData)
+                RecSeats(internalStep: $internalStep, selectedTab: $selectedTab)
+                    .environmentObject(modelData)
             } else {
                 Text("Unrecognized step")
             }

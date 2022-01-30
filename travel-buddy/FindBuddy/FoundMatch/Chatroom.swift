@@ -13,7 +13,9 @@ struct Chatroom: View {
     
     var body: some View {
         VStack {
-            ChatroomHeader(selectedTab: $selectedTab, internalStep: $internalStep)
+            if (internalStep != 5 && internalStep != 6 && internalStep != 7 && internalStep != 8) {
+                ChatroomHeader(selectedTab: $selectedTab, internalStep: $internalStep)
+            }
             
             if (internalStep == 0) {
                 // show chatroom
@@ -27,7 +29,9 @@ struct Chatroom: View {
             } else if (internalStep == 3) {
             } else if (internalStep == 4) {
             } else if (internalStep == 5) {
+                Congrats(internalStep: $internalStep)
             } else if (internalStep == 6) {
+                ReviewMatch(internalStep: $internalStep)
             } else if (internalStep == 7) {
             } else if (internalStep == 8) {
             } else {

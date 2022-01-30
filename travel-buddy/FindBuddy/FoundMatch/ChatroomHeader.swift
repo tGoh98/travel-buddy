@@ -51,6 +51,7 @@ struct ChatroomHeader: View {
                     }
                 }
                 .padding()
+                
             }.padding(.top, 25)
         }
         .background(Color.white)

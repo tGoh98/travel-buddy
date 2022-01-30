@@ -48,6 +48,9 @@
 		C2F1921727A6936000D18CD6 /* ChatroomBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1921627A6936000D18CD6 /* ChatroomBody.swift */; };
 		C2F1921A27A6938E00D18CD6 /* MatchBasicProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1921927A6938E00D18CD6 /* MatchBasicProfile.swift */; };
 		C2F1921D27A6956A00D18CD6 /* ConfirmMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1921C27A6956A00D18CD6 /* ConfirmMatch.swift */; };
+		C2F1922027A69BFF00D18CD6 /* Congrats.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1921F27A69BFF00D18CD6 /* Congrats.swift */; };
+		C2F1922427A69ED400D18CD6 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C2F1922327A69ED400D18CD6 /* ConfettiSwiftUI */; };
+		C2F1922727A6A12400D18CD6 /* ReviewMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1922627A6A12400D18CD6 /* ReviewMatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +97,8 @@
 		C2F1921627A6936000D18CD6 /* ChatroomBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomBody.swift; sourceTree = "<group>"; };
 		C2F1921927A6938E00D18CD6 /* MatchBasicProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchBasicProfile.swift; sourceTree = "<group>"; };
 		C2F1921C27A6956A00D18CD6 /* ConfirmMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmMatch.swift; sourceTree = "<group>"; };
+		C2F1921F27A69BFF00D18CD6 /* Congrats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congrats.swift; sourceTree = "<group>"; };
+		C2F1922627A6A12400D18CD6 /* ReviewMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewMatch.swift; sourceTree = "<group>"; };
 		C9B9B5B7C504801F756E620E /* Pods-travel-buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-buddy.release.xcconfig"; path = "Target Support Files/Pods-travel-buddy/Pods-travel-buddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F1922427A69ED400D18CD6 /* ConfettiSwiftUI in Frameworks */,
 				C274686C27A6008E00E9BFB2 /* FirebaseDatabase in Frameworks */,
 				1FB2C3E3935753417A40CF56 /* Pods_travel_buddy.framework in Frameworks */,
 			);
@@ -260,6 +266,8 @@
 				C2F1921627A6936000D18CD6 /* ChatroomBody.swift */,
 				C2F1921927A6938E00D18CD6 /* MatchBasicProfile.swift */,
 				C2F1921C27A6956A00D18CD6 /* ConfirmMatch.swift */,
+				C2F1921F27A69BFF00D18CD6 /* Congrats.swift */,
+				C2F1922627A6A12400D18CD6 /* ReviewMatch.swift */,
 			);
 			path = FoundMatch;
 			sourceTree = "<group>";
@@ -292,6 +300,7 @@
 			name = "travel-buddy";
 			packageProductDependencies = (
 				C274686B27A6008E00E9BFB2 /* FirebaseDatabase */,
+				C2F1922327A69ED400D18CD6 /* ConfettiSwiftUI */,
 			);
 			productName = "travel-buddy";
 			productReference = C28D205627A5DCDE0069611D /* travel-buddy.app */;
@@ -322,6 +331,7 @@
 			mainGroup = C28D204D27A5DCDE0069611D;
 			packageReferences = (
 				C274686A27A6008D00E9BFB2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C2F1922227A69ED400D18CD6 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
 			);
 			productRefGroup = C28D205727A5DCDE0069611D /* Products */;
 			projectDirPath = "";
@@ -417,6 +427,7 @@
 				C2F191FA27A66E0200D18CD6 /* DestPlansInfo.swift in Sources */,
 				C2F191ED27A6494A00D18CD6 /* GenderInfo.swift in Sources */,
 				C2F1920727A67EB300D18CD6 /* MatchFound.swift in Sources */,
+				C2F1922727A6A12400D18CD6 /* ReviewMatch.swift in Sources */,
 				C274686727A5FE3E00E9BFB2 /* ModelData.swift in Sources */,
 				C2F191F427A6654B00D18CD6 /* SelectedBtn.swift in Sources */,
 				C2F191E927A645E500D18CD6 /* UserInfo.swift in Sources */,
@@ -427,6 +438,7 @@
 				C23C1CF327A63CE200502792 /* FlightInfoView.swift in Sources */,
 				C2F1920B27A6846200D18CD6 /* MatchProfile.swift in Sources */,
 				C2F1921427A68E8B00D18CD6 /* ChatroomHeader.swift in Sources */,
+				C2F1922027A69BFF00D18CD6 /* Congrats.swift in Sources */,
 				C2F1920E27A684CD00D18CD6 /* MatchDriver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +640,14 @@
 				minimumVersion = 8.11.0;
 			};
 		};
+		C2F1922227A69ED400D18CD6 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -635,6 +655,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C274686A27A6008D00E9BFB2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		C2F1922327A69ED400D18CD6 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2F1922227A69ED400D18CD6 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

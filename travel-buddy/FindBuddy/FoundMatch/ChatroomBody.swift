@@ -88,7 +88,7 @@ struct ChatroomBody: View {
     }
     
     func getKey() -> String {
-        var names:[String] = [modelData.name, "toBeUpdated"]
+        var names:[String] = [modelData.name, modelData.matchedName]
         names.sort()
         return names.joined()
     }

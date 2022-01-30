@@ -24,6 +24,7 @@ struct TextFieldRow: View {
                     SecureField("", text: $val).foregroundColor(Color.init(hex:"3C3C43"))
                 } else {
                     TextField("", text: $val).foregroundColor(Color.init(hex:"3C3C43"))
+                        .autocapitalization(.none)
                 }
             })
             Divider()

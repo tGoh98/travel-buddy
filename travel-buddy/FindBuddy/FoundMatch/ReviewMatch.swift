@@ -9,15 +9,17 @@ import SwiftUI
 
 struct ReviewMatch: View {
     @Binding var internalStep: Int
+    var matchee: String
     
     var body: some View {
         HStack {
             Spacer()
             VStack {
                 Spacer()
-                Text("You've been matched with")
+                Text("You've been matched with \n\(matchee) for this trip!")
                     .font(.system(size: 27))
                     .foregroundColor(Color.init(hex: "0E57BD"))
+                    .padding()
                 Button (action: {
                     internalStep = 8 // Note: 7 if needed
                 }){
@@ -44,6 +46,6 @@ struct ReviewMatch: View {
 
 struct ReviewMatch_Previews: PreviewProvider {
     static var previews: some View {
-        ReviewMatch(internalStep: .constant(6))
+        ReviewMatch(internalStep: .constant(6), matchee: "Christina")
     }
 }

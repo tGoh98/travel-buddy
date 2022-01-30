@@ -81,13 +81,20 @@ struct UserInfo: View {
                         topText = "Great, you're done!"
                         
                         // Check for matches
-                        dbRef.child("users/\(modelData.name)").observeSingleEvent(of: .value, with: { snapshot in
+                        dbRef.child("users/\(modelData.username)").observeSingleEvent(of: .value, with: { snapshot in
                             let data = snapshot.value as? [String:AnyObject]
                             modelData.matched = true
-                            modelData.matchedAge = data!["age"] as? String ?? ""
-                            modelData.matchedGender = data!["gender"] as? String ?? ""
-                            modelData.matchedName = data!["name"] as? String ?? ""
+                            modelData.matchedAge = data!["age"] as? String ?? "19"
+                            modelData.matchedGender = data!["gender"] as? String ?? "male"
+                            modelData.matchedUsername = data!["name"] as? String ?? "biggestFan"
                             modelData.matchedPlans = "Hiking"
+                            dbRef.child("users/\(modelData.matchedUsername)/name").getData(completion: { error, snapshot in
+                                guard error == nil else {
+                                    print(error!.localizedDescription)
+                                    return;
+                                }
+                                modelData.matchedName = snapshot.value as? String ?? "Sebastian Fan"
+                            })
                         })
                         
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {

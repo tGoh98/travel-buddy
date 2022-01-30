@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct Chatroom: View {
+    @EnvironmentObject var modelData: ModelData
     @Binding var selectedTab: Int
     @State private var internalStep: Int = 0 // 0 body, 1 profile, 2 confirm, 3 yes buddy, 4 no not for me, 5 congrats, 6 review, 7 avail seats, 8 recSeats (then bring back to 0)
     
     var body: some View {
         VStack {
-            ChatroomHeader(selectedTab: $selectedTab, internalStep: $internalStep)
+            if (internalStep != 5 && internalStep != 6 && internalStep != 7 && internalStep != 8) {
+                ChatroomHeader(selectedTab: $selectedTab, internalStep: $internalStep)
+            }
             
             if (internalStep == 0) {
                 // show chatroom
                 ChatroomBody()
+                    .environmentObject(modelData)
             } else if (internalStep == 1) {
                 // show match's profile
                 MatchBasicProfile()
@@ -27,7 +31,9 @@ struct Chatroom: View {
             } else if (internalStep == 3) {
             } else if (internalStep == 4) {
             } else if (internalStep == 5) {
+                Congrats(internalStep: $internalStep)
             } else if (internalStep == 6) {
+                ReviewMatch(internalStep: $internalStep)
             } else if (internalStep == 7) {
             } else if (internalStep == 8) {
             } else {

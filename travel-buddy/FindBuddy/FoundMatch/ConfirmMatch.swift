@@ -33,7 +33,7 @@ struct ConfirmMatch: View {
                             .font(.system(size: 30))
                             .padding()
                         Button (action: {
-                            internalStep = 3
+                            internalStep = 5 // Note: 3 if needed
                         }){
                             TextElem(str: "Yes, let's buddy up!", fontSize: 17)
                                 .foregroundColor(.white)

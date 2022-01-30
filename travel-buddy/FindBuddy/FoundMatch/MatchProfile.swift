@@ -20,7 +20,34 @@ struct MatchProfile: View {
                         .foregroundColor(Color.init(hex: "0E57BD"))
                         .font(.system(size: 25))
                         .fontWeight(.semibold)
-                    // TODO: profile stuff here
+                        .padding(.bottom)
+                    VStack (alignment: .leading) {
+                        Text("Basic Info")
+                            .foregroundColor(Color.init(hex: "0E57BD"))
+                        HStack {
+                            Image("genderIcon")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 20, height: 20)
+                            Text(modelData.matchedGender)
+//                            Text("male")
+                        }
+                        HStack {
+                            Image("ageIcon")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 20, height: 20)
+//                            Text("22")
+                            Text(modelData.matchedAge)
+                        }
+                    }.padding(.bottom)
+                    VStack (alignment: .leading) {
+                        Text("Plans")
+                            .foregroundColor(Color.init(hex: "0E57BD"))
+                            .padding(.bottom, 5)
+//                        Text("Hiking")
+                        Text(modelData.matchedPlans)
+                    }.padding(.bottom)
                 }
                 .padding()
             }
@@ -38,10 +65,11 @@ struct MatchProfile: View {
                     .foregroundColor(.white)
                     .font(.title3)
             }
-            .padding(.horizontal, 135)
+            .padding(.horizontal, 105)
             .padding(.vertical, 10)
             .background(Color.init(hex: "0E57BD"))
             .clipShape(RoundedCorner(radius: 8.0, corners: [.bottomLeft, .bottomRight]))
+            .offset(y: -10)
         }
         
     }
@@ -50,5 +78,6 @@ struct MatchProfile: View {
 struct MatchProfile_Previews: PreviewProvider {
     static var previews: some View {
         MatchProfile(internalStep: .constant(0), selectedTab: .constant(1))
+            .background(Color.black)
     }
 }

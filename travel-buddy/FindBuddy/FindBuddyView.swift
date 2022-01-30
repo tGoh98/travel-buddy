@@ -16,7 +16,8 @@ struct FindBuddyView: View {
         if (buddyStep == 0) {
             FBIntro(step: $buddyStep)
         } else if (buddyStep == 1) {
-            UserInfo(step: $buddyStep)
+            UserInfo(step: $buddyStep, selectedTab: $selectedTab)
+                .environmentObject(modelData)
         } else if (buddyStep == 2) {
             MatchDriver(selectedTab: $selectedTab)
                 .environmentObject(modelData)

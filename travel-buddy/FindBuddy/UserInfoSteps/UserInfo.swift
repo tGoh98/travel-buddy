@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import FirebaseDatabase
 
 struct UserInfo: View {
     @Binding var step: Int
+    @Binding var selectedTab: Int
+    @EnvironmentObject var modelData: ModelData
     @State private var internalStep: Int = 0
     @State private var disableButton: Bool = true
     @State private var percentageDone: CGFloat = 0.0
@@ -16,6 +19,7 @@ struct UserInfo: View {
     @State private var agePrefs: [Bool] = [false, false, false, false]
     @State private var destPrefs: [Bool] = [false, false, false, false, false, false, false, false, false, false, false, false]
     @State private var topText: String = "Let's Start..."
+    let dbRef = Database.database().reference()
     
     var body: some View {
         VStack {
@@ -75,6 +79,20 @@ struct UserInfo: View {
                         topText = "So Close..."
                     } else {
                         topText = "Great, you're done!"
+                        
+                        // Check for matches
+                        dbRef.child("users/\(modelData.name)").observeSingleEvent(of: .value, with: { snapshot in
+                            let data = snapshot.value as? [String:AnyObject]
+                            modelData.matched = true
+                            modelData.matchedAge = data!["age"] as? String ?? ""
+                            modelData.matchedGender = data!["gender"] as? String ?? ""
+                            modelData.matchedName = data!["name"] as? String ?? ""
+                            modelData.matchedPlans = "Hiking"
+                        })
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                            selectedTab = 4
+                        }
                     }
                 }) {
                     TextElem(str: "Next")
@@ -94,7 +112,7 @@ struct UserInfo: View {
 
 struct UserInfo_Previews: PreviewProvider {
     static var previews: some View {
-        UserInfo(step: .constant(1))
+        UserInfo(step: .constant(1), selectedTab: .constant(1))
     }
 }
 

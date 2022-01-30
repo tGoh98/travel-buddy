@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Chatroom: View {
+    @EnvironmentObject var modelData: ModelData
     @Binding var selectedTab: Int
     @State private var internalStep: Int = 0 // 0 body, 1 profile, 2 confirm, 3 yes buddy, 4 no not for me, 5 congrats, 6 review, 7 avail seats, 8 recSeats (then bring back to 0)
     
@@ -20,6 +21,7 @@ struct Chatroom: View {
             if (internalStep == 0) {
                 // show chatroom
                 ChatroomBody()
+                    .environmentObject(modelData)
             } else if (internalStep == 1) {
                 // show match's profile
                 MatchBasicProfile()

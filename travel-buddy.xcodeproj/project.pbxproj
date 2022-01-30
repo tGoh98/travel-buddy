@@ -51,6 +51,7 @@
 		C2F1922027A69BFF00D18CD6 /* Congrats.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1921F27A69BFF00D18CD6 /* Congrats.swift */; };
 		C2F1922427A69ED400D18CD6 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C2F1922327A69ED400D18CD6 /* ConfettiSwiftUI */; };
 		C2F1922727A6A12400D18CD6 /* ReviewMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1922627A6A12400D18CD6 /* ReviewMatch.swift */; };
+		C2F1922E27A6A7CD00D18CD6 /* MsgCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1922D27A6A7CD00D18CD6 /* MsgCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		C2F1921C27A6956A00D18CD6 /* ConfirmMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmMatch.swift; sourceTree = "<group>"; };
 		C2F1921F27A69BFF00D18CD6 /* Congrats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Congrats.swift; sourceTree = "<group>"; };
 		C2F1922627A6A12400D18CD6 /* ReviewMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewMatch.swift; sourceTree = "<group>"; };
+		C2F1922D27A6A7CD00D18CD6 /* MsgCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgCard.swift; sourceTree = "<group>"; };
 		C9B9B5B7C504801F756E620E /* Pods-travel-buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-buddy.release.xcconfig"; path = "Target Support Files/Pods-travel-buddy/Pods-travel-buddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -268,6 +270,7 @@
 				C2F1921C27A6956A00D18CD6 /* ConfirmMatch.swift */,
 				C2F1921F27A69BFF00D18CD6 /* Congrats.swift */,
 				C2F1922627A6A12400D18CD6 /* ReviewMatch.swift */,
+				C2F1922D27A6A7CD00D18CD6 /* MsgCard.swift */,
 			);
 			path = FoundMatch;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				C28D205A27A5DCDE0069611D /* travel_buddyApp.swift in Sources */,
 				C2F1921A27A6938E00D18CD6 /* MatchBasicProfile.swift in Sources */,
 				C274688E27A61F3D00E9BFB2 /* RoundedCorner.swift in Sources */,
+				C2F1922E27A6A7CD00D18CD6 /* MsgCard.swift in Sources */,
 				C2F191FA27A66E0200D18CD6 /* DestPlansInfo.swift in Sources */,
 				C2F191ED27A6494A00D18CD6 /* GenderInfo.swift in Sources */,
 				C2F1920727A67EB300D18CD6 /* MatchFound.swift in Sources */,

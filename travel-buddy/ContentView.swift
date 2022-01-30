@@ -33,6 +33,7 @@ struct ContentView: View {
                 MatchFound(selectedTab: $selectedTab, buddyStep: $buddyStep)
             } else if (selectedTab == 5) {
                 Chatroom(selectedTab: $selectedTab)
+                    .environmentObject(modelData)
             } else {
                 Text("Error!")
             }

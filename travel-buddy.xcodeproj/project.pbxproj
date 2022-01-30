@@ -3,23 +3,82 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FB2C3E3935753417A40CF56 /* Pods_travel_buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F826EC17E1DA9AFEAF21C9A /* Pods_travel_buddy.framework */; };
+		C23C1CE127A62B9A00502792 /* TextElem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23C1CE027A62B9A00502792 /* TextElem.swift */; };
+		C23C1CEB27A62F2A00502792 /* acari-sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23C1CEA27A62F2A00502792 /* acari-sans.ttf */; };
+		C23C1CEF27A6367300502792 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23C1CEE27A6367300502792 /* TabBarView.swift */; };
+		C23C1CF327A63CE200502792 /* FlightInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23C1CF227A63CE200502792 /* FlightInfoView.swift */; };
+		C23C1CF827A63D5300502792 /* FindBuddyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23C1CF727A63D5300502792 /* FindBuddyView.swift */; };
+		C23C1CFD27A63D7900502792 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23C1CFC27A63D7900502792 /* ProfileView.swift */; };
+		C244E5BC27A6277000901F41 /* splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = C244E5BB27A6277000901F41 /* splash.gif */; };
+		C274685E27A5F92500E9BFB2 /* TextFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274685D27A5F92500E9BFB2 /* TextFieldRow.swift */; };
+		C274686327A5FB4500E9BFB2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274686227A5FB4500E9BFB2 /* Login.swift */; };
+		C274686727A5FE3E00E9BFB2 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274686627A5FE3E00E9BFB2 /* ModelData.swift */; };
+		C274686C27A6008E00E9BFB2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C274686B27A6008E00E9BFB2 /* FirebaseDatabase */; };
+		C274686F27A6013C00E9BFB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C274686E27A6013C00E9BFB2 /* GoogleService-Info.plist */; };
+		C274687627A6100400E9BFB2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274687527A6100400E9BFB2 /* User.swift */; };
+		C274688027A611DE00E9BFB2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274687F27A611DE00E9BFB2 /* Message.swift */; };
+		C274688327A613D300E9BFB2 /* FlightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274688227A613D300E9BFB2 /* FlightInfo.swift */; };
+		C274688E27A61F3D00E9BFB2 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274688D27A61F3D00E9BFB2 /* RoundedCorner.swift */; };
 		C28D205A27A5DCDE0069611D /* travel_buddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28D205927A5DCDE0069611D /* travel_buddyApp.swift */; };
 		C28D205C27A5DCDE0069611D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28D205B27A5DCDE0069611D /* ContentView.swift */; };
 		C28D205E27A5DCE60069611D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28D205D27A5DCE60069611D /* Assets.xcassets */; };
 		C28D206127A5DCE60069611D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28D206027A5DCE60069611D /* Preview Assets.xcassets */; };
+		C28D206B27A5EA7A0069611D /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28D206A27A5EA7A0069611D /* Splash.swift */; };
+		C28D206E27A5EC3F0069611D /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28D206D27A5EC3F0069611D /* Gif.swift */; };
+		C2F191E627A6403A00D18CD6 /* FBIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F191E527A6403A00D18CD6 /* FBIntro.swift */; };
+		C2F191E927A645E500D18CD6 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F191E827A645E500D18CD6 /* UserInfo.swift */; };
+		C2F191ED27A6494A00D18CD6 /* GenderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F191EC27A6494A00D18CD6 /* GenderInfo.swift */; };
+		C2F191F127A6646500D18CD6 /* UnselectedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F191F027A6646500D18CD6 /* UnselectedBtn.swift */; };
+		C2F191F427A6654B00D18CD6 /* SelectedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F191F327A6654B00D18CD6 /* SelectedBtn.swift */; };
+		C2F191F727A668FE00D18CD6 /* AgeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F191F627A668FE00D18CD6 /* AgeInfo.swift */; };
+		C2F191FA27A66E0200D18CD6 /* DestPlansInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F191F927A66E0200D18CD6 /* DestPlansInfo.swift */; };
+		C2F191FD27A66F5100D18CD6 /* UnselectedBtnSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F191FC27A66F5100D18CD6 /* UnselectedBtnSmall.swift */; };
+		C2F1920027A66F6800D18CD6 /* SelectedBtnSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F191FF27A66F6800D18CD6 /* SelectedBtnSmall.swift */; };
+		C2F1920327A676B900D18CD6 /* InfoCol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1920227A676B900D18CD6 /* InfoCol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F826EC17E1DA9AFEAF21C9A /* Pods_travel_buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_travel_buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD3452FE78E580DCB2B09EB /* Pods-travel-buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-buddy.debug.xcconfig"; path = "Target Support Files/Pods-travel-buddy/Pods-travel-buddy.debug.xcconfig"; sourceTree = "<group>"; };
+		C23C1CE027A62B9A00502792 /* TextElem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextElem.swift; sourceTree = "<group>"; };
+		C23C1CEA27A62F2A00502792 /* acari-sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "acari-sans.ttf"; path = "travel-buddy/fonts/acari-sans.ttf"; sourceTree = SOURCE_ROOT; };
+		C23C1CEE27A6367300502792 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C23C1CF227A63CE200502792 /* FlightInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfoView.swift; sourceTree = "<group>"; };
+		C23C1CF727A63D5300502792 /* FindBuddyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBuddyView.swift; sourceTree = "<group>"; };
+		C23C1CFC27A63D7900502792 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C244E5BB27A6277000901F41 /* splash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = splash.gif; sourceTree = "<group>"; };
+		C274685D27A5F92500E9BFB2 /* TextFieldRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldRow.swift; sourceTree = "<group>"; };
+		C274686227A5FB4500E9BFB2 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		C274686627A5FE3E00E9BFB2 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		C274686E27A6013C00E9BFB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C274687527A6100400E9BFB2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C274687F27A611DE00E9BFB2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C274688227A613D300E9BFB2 /* FlightInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfo.swift; sourceTree = "<group>"; };
+		C274688D27A61F3D00E9BFB2 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		C28D205627A5DCDE0069611D /* travel-buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "travel-buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28D205927A5DCDE0069611D /* travel_buddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travel_buddyApp.swift; sourceTree = "<group>"; };
 		C28D205B27A5DCDE0069611D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C28D205D27A5DCE60069611D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28D206027A5DCE60069611D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C28D206227A5DCE60069611D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28D206A27A5EA7A0069611D /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		C28D206D27A5EC3F0069611D /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		C2F191E527A6403A00D18CD6 /* FBIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBIntro.swift; sourceTree = "<group>"; };
+		C2F191E827A645E500D18CD6 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		C2F191EC27A6494A00D18CD6 /* GenderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderInfo.swift; sourceTree = "<group>"; };
+		C2F191F027A6646500D18CD6 /* UnselectedBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnselectedBtn.swift; sourceTree = "<group>"; };
+		C2F191F327A6654B00D18CD6 /* SelectedBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBtn.swift; sourceTree = "<group>"; };
+		C2F191F627A668FE00D18CD6 /* AgeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeInfo.swift; sourceTree = "<group>"; };
+		C2F191F927A66E0200D18CD6 /* DestPlansInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestPlansInfo.swift; sourceTree = "<group>"; };
+		C2F191FC27A66F5100D18CD6 /* UnselectedBtnSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnselectedBtnSmall.swift; sourceTree = "<group>"; };
+		C2F191FF27A66F6800D18CD6 /* SelectedBtnSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBtnSmall.swift; sourceTree = "<group>"; };
+		C2F1920227A676B900D18CD6 /* InfoCol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCol.swift; sourceTree = "<group>"; };
+		C9B9B5B7C504801F756E620E /* Pods-travel-buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-buddy.release.xcconfig"; path = "Target Support Files/Pods-travel-buddy/Pods-travel-buddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +86,87 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C274686C27A6008E00E9BFB2 /* FirebaseDatabase in Frameworks */,
+				1FB2C3E3935753417A40CF56 /* Pods_travel_buddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90C9DD5DDFA13AC2403ED205 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFD3452FE78E580DCB2B09EB /* Pods-travel-buddy.debug.xcconfig */,
+				C9B9B5B7C504801F756E620E /* Pods-travel-buddy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C23C1CDB27A629AA00502792 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C23C1CEA27A62F2A00502792 /* acari-sans.ttf */,
+				C23C1CE027A62B9A00502792 /* TextElem.swift */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		C23C1CF127A63CC800502792 /* FlightInfo */ = {
+			isa = PBXGroup;
+			children = (
+				C23C1CF227A63CE200502792 /* FlightInfoView.swift */,
+				C2F1920227A676B900D18CD6 /* InfoCol.swift */,
+			);
+			path = FlightInfo;
+			sourceTree = "<group>";
+		};
+		C23C1CF627A63CF900502792 /* FindBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				C2F191EB27A6483C00D18CD6 /* UserInfoSteps */,
+				C23C1CF727A63D5300502792 /* FindBuddyView.swift */,
+				C2F191E527A6403A00D18CD6 /* FBIntro.swift */,
+			);
+			path = FindBuddy;
+			sourceTree = "<group>";
+		};
+		C23C1CFB27A63D6800502792 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C23C1CFC27A63D7900502792 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C274685827A5F75300E9BFB2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C274685D27A5F92500E9BFB2 /* TextFieldRow.swift */,
+				C274686227A5FB4500E9BFB2 /* Login.swift */,
+				C274688D27A61F3D00E9BFB2 /* RoundedCorner.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C274686527A5FE2A00E9BFB2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C274686627A5FE3E00E9BFB2 /* ModelData.swift */,
+				C274687527A6100400E9BFB2 /* User.swift */,
+				C274687F27A611DE00E9BFB2 /* Message.swift */,
+				C274688227A613D300E9BFB2 /* FlightInfo.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		C28D204D27A5DCDE0069611D = {
 			isa = PBXGroup;
 			children = (
 				C28D205827A5DCDE0069611D /* travel-buddy */,
 				C28D205727A5DCDE0069611D /* Products */,
+				90C9DD5DDFA13AC2403ED205 /* Pods */,
+				FC0ACCEEE51EB4EB950A44CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +181,20 @@
 		C28D205827A5DCDE0069611D /* travel-buddy */ = {
 			isa = PBXGroup;
 			children = (
+				C23C1CFB27A63D6800502792 /* Profile */,
+				C23C1CF627A63CF900502792 /* FindBuddy */,
+				C23C1CF127A63CC800502792 /* FlightInfo */,
+				C23C1CDB27A629AA00502792 /* fonts */,
+				C274686527A5FE2A00E9BFB2 /* Data */,
+				C274685827A5F75300E9BFB2 /* Login */,
+				C28D206927A5EA600069611D /* Splash */,
 				C28D205927A5DCDE0069611D /* travel_buddyApp.swift */,
 				C28D205B27A5DCDE0069611D /* ContentView.swift */,
 				C28D205D27A5DCE60069611D /* Assets.xcassets */,
 				C28D206227A5DCE60069611D /* Info.plist */,
+				C274686E27A6013C00E9BFB2 /* GoogleService-Info.plist */,
 				C28D205F27A5DCE60069611D /* Preview Content */,
+				C23C1CEE27A6367300502792 /* TabBarView.swift */,
 			);
 			path = "travel-buddy";
 			sourceTree = "<group>";
@@ -69,6 +207,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C28D206927A5EA600069611D /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C244E5BB27A6277000901F41 /* splash.gif */,
+				C28D206A27A5EA7A0069611D /* Splash.swift */,
+				C28D206D27A5EC3F0069611D /* Gif.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		C2F191EB27A6483C00D18CD6 /* UserInfoSteps */ = {
+			isa = PBXGroup;
+			children = (
+				C2F191E827A645E500D18CD6 /* UserInfo.swift */,
+				C2F191EC27A6494A00D18CD6 /* GenderInfo.swift */,
+				C2F191F027A6646500D18CD6 /* UnselectedBtn.swift */,
+				C2F191F327A6654B00D18CD6 /* SelectedBtn.swift */,
+				C2F191F627A668FE00D18CD6 /* AgeInfo.swift */,
+				C2F191F927A66E0200D18CD6 /* DestPlansInfo.swift */,
+				C2F191FC27A66F5100D18CD6 /* UnselectedBtnSmall.swift */,
+				C2F191FF27A66F6800D18CD6 /* SelectedBtnSmall.swift */,
+			);
+			path = UserInfoSteps;
+			sourceTree = "<group>";
+		};
+		FC0ACCEEE51EB4EB950A44CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F826EC17E1DA9AFEAF21C9A /* Pods_travel_buddy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,15 +247,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C28D206527A5DCE60069611D /* Build configuration list for PBXNativeTarget "travel-buddy" */;
 			buildPhases = (
+				4CB0E918B0D9818794E1D9C3 /* [CP] Check Pods Manifest.lock */,
 				C28D205227A5DCDE0069611D /* Sources */,
 				C28D205327A5DCDE0069611D /* Frameworks */,
 				C28D205427A5DCDE0069611D /* Resources */,
+				7F8BB498B79057439C801DF5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "travel-buddy";
+			packageProductDependencies = (
+				C274686B27A6008E00E9BFB2 /* FirebaseDatabase */,
+			);
 			productName = "travel-buddy";
 			productReference = C28D205627A5DCDE0069611D /* travel-buddy.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +288,9 @@
 				Base,
 			);
 			mainGroup = C28D204D27A5DCDE0069611D;
+			packageReferences = (
+				C274686A27A6008D00E9BFB2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C28D205727A5DCDE0069611D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +305,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23C1CEB27A62F2A00502792 /* acari-sans.ttf in Resources */,
+				C274686F27A6013C00E9BFB2 /* GoogleService-Info.plist in Resources */,
+				C244E5BC27A6277000901F41 /* splash.gif in Resources */,
 				C28D206127A5DCE60069611D /* Preview Assets.xcassets in Resources */,
 				C28D205E27A5DCE60069611D /* Assets.xcassets in Resources */,
 			);
@@ -133,13 +315,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CB0E918B0D9818794E1D9C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-travel-buddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F8BB498B79057439C801DF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-travel-buddy/Pods-travel-buddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-travel-buddy/Pods-travel-buddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-travel-buddy/Pods-travel-buddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C28D205227A5DCDE0069611D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C28D205C27A5DCDE0069611D /* ContentView.swift in Sources */,
+				C23C1CE127A62B9A00502792 /* TextElem.swift in Sources */,
+				C2F1920327A676B900D18CD6 /* InfoCol.swift in Sources */,
+				C23C1CEF27A6367300502792 /* TabBarView.swift in Sources */,
+				C274688327A613D300E9BFB2 /* FlightInfo.swift in Sources */,
+				C28D206B27A5EA7A0069611D /* Splash.swift in Sources */,
+				C274685E27A5F92500E9BFB2 /* TextFieldRow.swift in Sources */,
+				C274686327A5FB4500E9BFB2 /* Login.swift in Sources */,
+				C23C1CF827A63D5300502792 /* FindBuddyView.swift in Sources */,
+				C274687627A6100400E9BFB2 /* User.swift in Sources */,
+				C2F191E627A6403A00D18CD6 /* FBIntro.swift in Sources */,
+				C23C1CFD27A63D7900502792 /* ProfileView.swift in Sources */,
+				C274688027A611DE00E9BFB2 /* Message.swift in Sources */,
+				C2F1920027A66F6800D18CD6 /* SelectedBtnSmall.swift in Sources */,
+				C2F191FD27A66F5100D18CD6 /* UnselectedBtnSmall.swift in Sources */,
+				C28D206E27A5EC3F0069611D /* Gif.swift in Sources */,
 				C28D205A27A5DCDE0069611D /* travel_buddyApp.swift in Sources */,
+				C274688E27A61F3D00E9BFB2 /* RoundedCorner.swift in Sources */,
+				C2F191FA27A66E0200D18CD6 /* DestPlansInfo.swift in Sources */,
+				C2F191ED27A6494A00D18CD6 /* GenderInfo.swift in Sources */,
+				C274686727A5FE3E00E9BFB2 /* ModelData.swift in Sources */,
+				C2F191F427A6654B00D18CD6 /* SelectedBtn.swift in Sources */,
+				C2F191E927A645E500D18CD6 /* UserInfo.swift in Sources */,
+				C2F191F727A668FE00D18CD6 /* AgeInfo.swift in Sources */,
+				C2F191F127A6646500D18CD6 /* UnselectedBtn.swift in Sources */,
+				C23C1CF327A63CE200502792 /* FlightInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +512,7 @@
 		};
 		C28D206627A5DCE60069611D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFD3452FE78E580DCB2B09EB /* Pods-travel-buddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +535,7 @@
 		};
 		C28D206727A5DCE60069611D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B9B5B7C504801F756E620E /* Pods-travel-buddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -328,6 +578,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C274686A27A6008D00E9BFB2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C274686B27A6008E00E9BFB2 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C274686A27A6008D00E9BFB2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C28D204E27A5DCDE0069611D /* Project object */;
 }

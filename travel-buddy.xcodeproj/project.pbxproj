@@ -44,6 +44,10 @@
 		C2F1920B27A6846200D18CD6 /* MatchProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1920A27A6846200D18CD6 /* MatchProfile.swift */; };
 		C2F1920E27A684CD00D18CD6 /* MatchDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1920D27A684CD00D18CD6 /* MatchDriver.swift */; };
 		C2F1921127A6868300D18CD6 /* Chatroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1921027A6868300D18CD6 /* Chatroom.swift */; };
+		C2F1921427A68E8B00D18CD6 /* ChatroomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1921327A68E8B00D18CD6 /* ChatroomHeader.swift */; };
+		C2F1921727A6936000D18CD6 /* ChatroomBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1921627A6936000D18CD6 /* ChatroomBody.swift */; };
+		C2F1921A27A6938E00D18CD6 /* MatchBasicProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1921927A6938E00D18CD6 /* MatchBasicProfile.swift */; };
+		C2F1921D27A6956A00D18CD6 /* ConfirmMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1921C27A6956A00D18CD6 /* ConfirmMatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +90,10 @@
 		C2F1920A27A6846200D18CD6 /* MatchProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchProfile.swift; sourceTree = "<group>"; };
 		C2F1920D27A684CD00D18CD6 /* MatchDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDriver.swift; sourceTree = "<group>"; };
 		C2F1921027A6868300D18CD6 /* Chatroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatroom.swift; sourceTree = "<group>"; };
+		C2F1921327A68E8B00D18CD6 /* ChatroomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomHeader.swift; sourceTree = "<group>"; };
+		C2F1921627A6936000D18CD6 /* ChatroomBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomBody.swift; sourceTree = "<group>"; };
+		C2F1921927A6938E00D18CD6 /* MatchBasicProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchBasicProfile.swift; sourceTree = "<group>"; };
+		C2F1921C27A6956A00D18CD6 /* ConfirmMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmMatch.swift; sourceTree = "<group>"; };
 		C9B9B5B7C504801F756E620E /* Pods-travel-buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-buddy.release.xcconfig"; path = "Target Support Files/Pods-travel-buddy/Pods-travel-buddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +256,10 @@
 				C2F1920A27A6846200D18CD6 /* MatchProfile.swift */,
 				C2F1920D27A684CD00D18CD6 /* MatchDriver.swift */,
 				C2F1921027A6868300D18CD6 /* Chatroom.swift */,
+				C2F1921327A68E8B00D18CD6 /* ChatroomHeader.swift */,
+				C2F1921627A6936000D18CD6 /* ChatroomBody.swift */,
+				C2F1921927A6938E00D18CD6 /* MatchBasicProfile.swift */,
+				C2F1921C27A6956A00D18CD6 /* ConfirmMatch.swift */,
 			);
 			path = FoundMatch;
 			sourceTree = "<group>";
@@ -382,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F1921D27A6956A00D18CD6 /* ConfirmMatch.swift in Sources */,
 				C28D205C27A5DCDE0069611D /* ContentView.swift in Sources */,
 				C23C1CE127A62B9A00502792 /* TextElem.swift in Sources */,
 				C2F1920327A676B900D18CD6 /* InfoCol.swift in Sources */,
@@ -399,6 +412,7 @@
 				C2F191FD27A66F5100D18CD6 /* UnselectedBtnSmall.swift in Sources */,
 				C28D206E27A5EC3F0069611D /* Gif.swift in Sources */,
 				C28D205A27A5DCDE0069611D /* travel_buddyApp.swift in Sources */,
+				C2F1921A27A6938E00D18CD6 /* MatchBasicProfile.swift in Sources */,
 				C274688E27A61F3D00E9BFB2 /* RoundedCorner.swift in Sources */,
 				C2F191FA27A66E0200D18CD6 /* DestPlansInfo.swift in Sources */,
 				C2F191ED27A6494A00D18CD6 /* GenderInfo.swift in Sources */,
@@ -406,11 +420,13 @@
 				C274686727A5FE3E00E9BFB2 /* ModelData.swift in Sources */,
 				C2F191F427A6654B00D18CD6 /* SelectedBtn.swift in Sources */,
 				C2F191E927A645E500D18CD6 /* UserInfo.swift in Sources */,
+				C2F1921727A6936000D18CD6 /* ChatroomBody.swift in Sources */,
 				C2F191F727A668FE00D18CD6 /* AgeInfo.swift in Sources */,
 				C2F191F127A6646500D18CD6 /* UnselectedBtn.swift in Sources */,
 				C2F1921127A6868300D18CD6 /* Chatroom.swift in Sources */,
 				C23C1CF327A63CE200502792 /* FlightInfoView.swift in Sources */,
 				C2F1920B27A6846200D18CD6 /* MatchProfile.swift in Sources */,
+				C2F1921427A68E8B00D18CD6 /* ChatroomHeader.swift in Sources */,
 				C2F1920E27A684CD00D18CD6 /* MatchDriver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

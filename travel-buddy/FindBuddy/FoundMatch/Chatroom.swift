@@ -9,13 +9,30 @@ import SwiftUI
 
 struct Chatroom: View {
     @Binding var selectedTab: Int
+    @State private var internalStep: Int = 0 // 0 body, 1 profile, 2 confirm, 3 yes buddy, 4 no not for me, 5 congrats, 6 review, 7 avail seats, 8 recSeats (then bring back to 0)
     
     var body: some View {
         VStack {
-            Text("Chatroom")
-            Text("Chatroom")
-            Text("Chatroom")
-            Text("Chatroom")
+            ChatroomHeader(selectedTab: $selectedTab, internalStep: $internalStep)
+            
+            if (internalStep == 0) {
+                // show chatroom
+                ChatroomBody()
+            } else if (internalStep == 1) {
+                // show match's profile
+                MatchBasicProfile()
+            } else if (internalStep == 2) {
+                // confirm match modal
+                ConfirmMatch(internalStep: $internalStep)
+            } else if (internalStep == 3) {
+            } else if (internalStep == 4) {
+            } else if (internalStep == 5) {
+            } else if (internalStep == 6) {
+            } else if (internalStep == 7) {
+            } else if (internalStep == 8) {
+            } else {
+                Text("Unrecognized step")
+            }
         }
         .frame(
             minWidth: 0,

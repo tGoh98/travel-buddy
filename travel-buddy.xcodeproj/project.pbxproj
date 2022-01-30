@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B51F9CE27A6C07F0029FA67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B51F9CD27A6C07F0029FA67 /* GoogleService-Info.plist */; };
+		0B51F9D027A6C5D70029FA67 /* RecSeats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B51F9CF27A6C5D60029FA67 /* RecSeats.swift */; };
+		0B51F9D227A6CB280029FA67 /* SeatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B51F9D127A6CB280029FA67 /* SeatCard.swift */; };
+		0B51F9D427A6CE5F0029FA67 /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B51F9D327A6CE5F0029FA67 /* Seat.swift */; };
 		1FB2C3E3935753417A40CF56 /* Pods_travel_buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F826EC17E1DA9AFEAF21C9A /* Pods_travel_buddy.framework */; };
 		C23C1CE127A62B9A00502792 /* TextElem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23C1CE027A62B9A00502792 /* TextElem.swift */; };
 		C23C1CEB27A62F2A00502792 /* acari-sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23C1CEA27A62F2A00502792 /* acari-sans.ttf */; };
@@ -19,7 +23,6 @@
 		C274686327A5FB4500E9BFB2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274686227A5FB4500E9BFB2 /* Login.swift */; };
 		C274686727A5FE3E00E9BFB2 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274686627A5FE3E00E9BFB2 /* ModelData.swift */; };
 		C274686C27A6008E00E9BFB2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C274686B27A6008E00E9BFB2 /* FirebaseDatabase */; };
-		C274686F27A6013C00E9BFB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C274686E27A6013C00E9BFB2 /* GoogleService-Info.plist */; };
 		C274687627A6100400E9BFB2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274687527A6100400E9BFB2 /* User.swift */; };
 		C274688027A611DE00E9BFB2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274687F27A611DE00E9BFB2 /* Message.swift */; };
 		C274688327A613D300E9BFB2 /* FlightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274688227A613D300E9BFB2 /* FlightInfo.swift */; };
@@ -55,6 +58,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B51F9CD27A6C07F0029FA67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0B51F9CF27A6C5D60029FA67 /* RecSeats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecSeats.swift; sourceTree = "<group>"; };
+		0B51F9D127A6CB280029FA67 /* SeatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCard.swift; sourceTree = "<group>"; };
+		0B51F9D327A6CE5F0029FA67 /* Seat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seat.swift; sourceTree = "<group>"; };
 		9F826EC17E1DA9AFEAF21C9A /* Pods_travel_buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_travel_buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD3452FE78E580DCB2B09EB /* Pods-travel-buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-buddy.debug.xcconfig"; path = "Target Support Files/Pods-travel-buddy/Pods-travel-buddy.debug.xcconfig"; sourceTree = "<group>"; };
 		C23C1CE027A62B9A00502792 /* TextElem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextElem.swift; sourceTree = "<group>"; };
@@ -67,7 +74,6 @@
 		C274685D27A5F92500E9BFB2 /* TextFieldRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldRow.swift; sourceTree = "<group>"; };
 		C274686227A5FB4500E9BFB2 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		C274686627A5FE3E00E9BFB2 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		C274686E27A6013C00E9BFB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C274687527A6100400E9BFB2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C274687F27A611DE00E9BFB2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C274688227A613D300E9BFB2 /* FlightInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfo.swift; sourceTree = "<group>"; };
@@ -181,6 +187,7 @@
 				C274687527A6100400E9BFB2 /* User.swift */,
 				C274687F27A611DE00E9BFB2 /* Message.swift */,
 				C274688227A613D300E9BFB2 /* FlightInfo.swift */,
+				0B51F9D327A6CE5F0029FA67 /* Seat.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -217,7 +224,7 @@
 				C28D205B27A5DCDE0069611D /* ContentView.swift */,
 				C28D205D27A5DCE60069611D /* Assets.xcassets */,
 				C28D206227A5DCE60069611D /* Info.plist */,
-				C274686E27A6013C00E9BFB2 /* GoogleService-Info.plist */,
+				0B51F9CD27A6C07F0029FA67 /* GoogleService-Info.plist */,
 				C28D205F27A5DCE60069611D /* Preview Content */,
 				C23C1CEE27A6367300502792 /* TabBarView.swift */,
 			);
@@ -271,6 +278,8 @@
 				C2F1921F27A69BFF00D18CD6 /* Congrats.swift */,
 				C2F1922627A6A12400D18CD6 /* ReviewMatch.swift */,
 				C2F1922D27A6A7CD00D18CD6 /* MsgCard.swift */,
+				0B51F9CF27A6C5D60029FA67 /* RecSeats.swift */,
+				0B51F9D127A6CB280029FA67 /* SeatCard.swift */,
 			);
 			path = FoundMatch;
 			sourceTree = "<group>";
@@ -351,8 +360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C23C1CEB27A62F2A00502792 /* acari-sans.ttf in Resources */,
-				C274686F27A6013C00E9BFB2 /* GoogleService-Info.plist in Resources */,
 				C244E5BC27A6277000901F41 /* splash.gif in Resources */,
+				0B51F9CE27A6C07F0029FA67 /* GoogleService-Info.plist in Resources */,
 				C28D206127A5DCE60069611D /* Preview Assets.xcassets in Resources */,
 				C28D205E27A5DCE60069611D /* Assets.xcassets in Resources */,
 			);
@@ -425,11 +434,14 @@
 				C2F191FD27A66F5100D18CD6 /* UnselectedBtnSmall.swift in Sources */,
 				C28D206E27A5EC3F0069611D /* Gif.swift in Sources */,
 				C28D205A27A5DCDE0069611D /* travel_buddyApp.swift in Sources */,
+				0B51F9D427A6CE5F0029FA67 /* Seat.swift in Sources */,
 				C2F1921A27A6938E00D18CD6 /* MatchBasicProfile.swift in Sources */,
 				C274688E27A61F3D00E9BFB2 /* RoundedCorner.swift in Sources */,
 				C2F1922E27A6A7CD00D18CD6 /* MsgCard.swift in Sources */,
 				C2F191FA27A66E0200D18CD6 /* DestPlansInfo.swift in Sources */,
 				C2F191ED27A6494A00D18CD6 /* GenderInfo.swift in Sources */,
+				0B51F9D027A6C5D70029FA67 /* RecSeats.swift in Sources */,
+				0B51F9D227A6CB280029FA67 /* SeatCard.swift in Sources */,
 				C2F1920727A67EB300D18CD6 /* MatchFound.swift in Sources */,
 				C2F1922727A6A12400D18CD6 /* ReviewMatch.swift in Sources */,
 				C274686727A5FE3E00E9BFB2 /* ModelData.swift in Sources */,

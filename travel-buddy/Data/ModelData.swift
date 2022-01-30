@@ -11,6 +11,7 @@ import SwiftUI
 final class ModelData: ObservableObject {
     
     var name: String = "alphabear"
+    var flightNum: String = "7079"
     @Published var showChatroom: Bool = false
     @Published var matched: Bool = false
     @Published var matchedName: String = "asdf"

@@ -40,12 +40,11 @@ struct RecSeats: View {
             }
         }
         .onAppear() {
-            let url = URL(string: "http://localhost:4000/seats/rec?user1=\(modelData.username)&user2=\(modelData.matchedUsername)")
+            let url = URL(string: "http://192.168.1.118:4000/seats/rec?user1=\(modelData.username)&user2=\(modelData.matchedUsername)")
             var request = URLRequest(url: url!)
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
             let task = URLSession.shared.dataTask(with: url!) { data, response, error in
                 if let data = data {
-                    print(data)
                     if let seats = try? JSONDecoder().decode([Seat].self, from: data) {
                         print(seats)
                     } else {

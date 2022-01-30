@@ -39,8 +39,8 @@ struct Login: View {
             
             // Login button
             Button(action: {
-                modelData.name = lastName
-                modelData.username = username
+//                modelData.name = lastName
+//                modelData.username = username
                 self.step += 1
             }) {
                 TextElem(str: "Log in")

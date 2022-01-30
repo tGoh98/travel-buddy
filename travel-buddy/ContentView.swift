@@ -14,25 +14,33 @@ struct ContentView: View {
     @State private var buddyStep: Int = 0
     
     var body: some View {
-        Spacer()
         VStack {
+            if (selectedTab != 5) {
+                Spacer()
+            }
             if (selectedTab == 1) {
                 // Flight info
                 FlightInfoView()
             } else if (selectedTab == 2) {
                 // Find buddy
-                FindBuddyView(buddyStep: $buddyStep)
+                FindBuddyView(buddyStep: $buddyStep, selectedTab: $selectedTab)
+                    .environmentObject(modelData)
             } else if (selectedTab == 3) {
                 // Profile
                 ProfileView()
             } else if (selectedTab == 4) {
                 // Match found dialog
                 MatchFound(selectedTab: $selectedTab, buddyStep: $buddyStep)
+            } else if (selectedTab == 5) {
+                Chatroom(selectedTab: $selectedTab)
             } else {
                 Text("Error!")
             }
-            Spacer()
-            TabBarView(selectedTab: $selectedTab)
+            if (selectedTab != 5) {
+                Spacer()
+                TabBarView(selectedTab: $selectedTab)
+                    .environmentObject(modelData)
+            }
         }
         .ignoresSafeArea()
         

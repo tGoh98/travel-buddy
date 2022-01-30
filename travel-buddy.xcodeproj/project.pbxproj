@@ -41,6 +41,9 @@
 		C2F1920027A66F6800D18CD6 /* SelectedBtnSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F191FF27A66F6800D18CD6 /* SelectedBtnSmall.swift */; };
 		C2F1920327A676B900D18CD6 /* InfoCol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1920227A676B900D18CD6 /* InfoCol.swift */; };
 		C2F1920727A67EB300D18CD6 /* MatchFound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1920627A67EB300D18CD6 /* MatchFound.swift */; };
+		C2F1920B27A6846200D18CD6 /* MatchProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1920A27A6846200D18CD6 /* MatchProfile.swift */; };
+		C2F1920E27A684CD00D18CD6 /* MatchDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1920D27A684CD00D18CD6 /* MatchDriver.swift */; };
+		C2F1921127A6868300D18CD6 /* Chatroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1921027A6868300D18CD6 /* Chatroom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,9 @@
 		C2F191FF27A66F6800D18CD6 /* SelectedBtnSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBtnSmall.swift; sourceTree = "<group>"; };
 		C2F1920227A676B900D18CD6 /* InfoCol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCol.swift; sourceTree = "<group>"; };
 		C2F1920627A67EB300D18CD6 /* MatchFound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFound.swift; sourceTree = "<group>"; };
+		C2F1920A27A6846200D18CD6 /* MatchProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchProfile.swift; sourceTree = "<group>"; };
+		C2F1920D27A684CD00D18CD6 /* MatchDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDriver.swift; sourceTree = "<group>"; };
+		C2F1921027A6868300D18CD6 /* Chatroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatroom.swift; sourceTree = "<group>"; };
 		C9B9B5B7C504801F756E620E /* Pods-travel-buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-buddy.release.xcconfig"; path = "Target Support Files/Pods-travel-buddy/Pods-travel-buddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,6 +245,9 @@
 			isa = PBXGroup;
 			children = (
 				C2F1920627A67EB300D18CD6 /* MatchFound.swift */,
+				C2F1920A27A6846200D18CD6 /* MatchProfile.swift */,
+				C2F1920D27A684CD00D18CD6 /* MatchDriver.swift */,
+				C2F1921027A6868300D18CD6 /* Chatroom.swift */,
 			);
 			path = FoundMatch;
 			sourceTree = "<group>";
@@ -399,7 +408,10 @@
 				C2F191E927A645E500D18CD6 /* UserInfo.swift in Sources */,
 				C2F191F727A668FE00D18CD6 /* AgeInfo.swift in Sources */,
 				C2F191F127A6646500D18CD6 /* UnselectedBtn.swift in Sources */,
+				C2F1921127A6868300D18CD6 /* Chatroom.swift in Sources */,
 				C23C1CF327A63CE200502792 /* FlightInfoView.swift in Sources */,
+				C2F1920B27A6846200D18CD6 /* MatchProfile.swift in Sources */,
+				C2F1920E27A684CD00D18CD6 /* MatchDriver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

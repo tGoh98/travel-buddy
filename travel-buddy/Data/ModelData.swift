@@ -16,6 +16,7 @@ final class ModelData: ObservableObject {
 //    
 //    var planeImg: Image = Image("aaLogo")
     var name: String = "Tim"
+    @Published var showChatroom: Bool = false
 //    var seatnum: String = String(Int.random(in: 0..<40)) + String("ABCDEFGHIJKLMNOP".randomElement()!)
 //    var dest: String = ""
 //    var start: String  = ""

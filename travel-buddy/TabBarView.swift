@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TabBarView: View {
     @Binding var selectedTab: Int
+    @EnvironmentObject var modelData: ModelData
     @State private var img1: String = "homeIconSelected"
     @State private var img2: String = "planeIcon"
     @State private var img3: String = "userIcon"
@@ -29,10 +30,14 @@ struct TabBarView: View {
             }
             Spacer()
             Button (action: {
-                selectedTab = 2
-                img1 = "homeIcon"
-                img2 = "planeIconSelected"
-                img3 = "userIcon"
+                if (modelData.showChatroom == true) {
+                    selectedTab = 5
+                } else {
+                    selectedTab = 2
+                    img1 = "homeIcon"
+                    img2 = "planeIconSelected"
+                    img3 = "userIcon"
+                }
             }){
                 Image(img2)
                     .resizable()

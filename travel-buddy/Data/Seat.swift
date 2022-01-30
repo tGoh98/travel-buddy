@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Seat {
+struct Seat: Decodable  {
     var row: Int
     var seat: String
     var type: String

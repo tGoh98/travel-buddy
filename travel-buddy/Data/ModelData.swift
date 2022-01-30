@@ -15,7 +15,7 @@ final class ModelData: ObservableObject {
     @Published var showChatroom: Bool = false
     @Published var matched: Bool = false
     @Published var matchedName: String = "asdf"
-    @Published var matchedUsername: String = "asdf"
+    @Published var matchedUsername: String = "biggestFan"
     @Published var matchedGender: String = "male"
     @Published var matchedPlans: String = "hiking"
     @Published var matchedAge: String = "22"

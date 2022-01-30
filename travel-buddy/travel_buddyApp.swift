@@ -12,7 +12,7 @@ import Firebase
 struct travel_buddyApp: App {
     @StateObject private var modelData = ModelData()
     
-    @State var step: Int = 1
+    @State var step: Int = 2 // TODO: RESET THIS TO 0
     let splashTimer = Timer.publish(every: 3, on: .current, in: .common).autoconnect()
     
     init() {

@@ -45,6 +45,7 @@ struct TabBarView: View {
                 img1 = "homeIcon"
                 img2 = "planeIcon"
                 img3 = "userIconSelected"
+                selectedTab = 4 // TODO: REMOVE THIS!!!
             }){
                 Image(img3)
                     .resizable()

@@ -11,6 +11,7 @@ import Foundation
 struct ContentView: View {
     @EnvironmentObject var modelData: ModelData
     @State private var selectedTab: Int = 1
+    @State private var buddyStep: Int = 0
     
     var body: some View {
         Spacer()
@@ -20,10 +21,13 @@ struct ContentView: View {
                 FlightInfoView()
             } else if (selectedTab == 2) {
                 // Find buddy
-                FindBuddyView()
+                FindBuddyView(buddyStep: $buddyStep)
             } else if (selectedTab == 3) {
                 // Profile
                 ProfileView()
+            } else if (selectedTab == 4) {
+                // Match found dialog
+                MatchFound(selectedTab: $selectedTab, buddyStep: $buddyStep)
             } else {
                 Text("Error!")
             }

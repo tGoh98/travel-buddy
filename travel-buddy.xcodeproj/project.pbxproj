@@ -40,6 +40,7 @@
 		C2F191FD27A66F5100D18CD6 /* UnselectedBtnSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F191FC27A66F5100D18CD6 /* UnselectedBtnSmall.swift */; };
 		C2F1920027A66F6800D18CD6 /* SelectedBtnSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F191FF27A66F6800D18CD6 /* SelectedBtnSmall.swift */; };
 		C2F1920327A676B900D18CD6 /* InfoCol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1920227A676B900D18CD6 /* InfoCol.swift */; };
+		C2F1920727A67EB300D18CD6 /* MatchFound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1920627A67EB300D18CD6 /* MatchFound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		C2F191FC27A66F5100D18CD6 /* UnselectedBtnSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnselectedBtnSmall.swift; sourceTree = "<group>"; };
 		C2F191FF27A66F6800D18CD6 /* SelectedBtnSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBtnSmall.swift; sourceTree = "<group>"; };
 		C2F1920227A676B900D18CD6 /* InfoCol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCol.swift; sourceTree = "<group>"; };
+		C2F1920627A67EB300D18CD6 /* MatchFound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchFound.swift; sourceTree = "<group>"; };
 		C9B9B5B7C504801F756E620E /* Pods-travel-buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel-buddy.release.xcconfig"; path = "Target Support Files/Pods-travel-buddy/Pods-travel-buddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 		C23C1CF627A63CF900502792 /* FindBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				C2F1920527A67E9900D18CD6 /* FoundMatch */,
 				C2F191EB27A6483C00D18CD6 /* UserInfoSteps */,
 				C23C1CF727A63D5300502792 /* FindBuddyView.swift */,
 				C2F191E527A6403A00D18CD6 /* FBIntro.swift */,
@@ -230,6 +233,14 @@
 				C2F191FF27A66F6800D18CD6 /* SelectedBtnSmall.swift */,
 			);
 			path = UserInfoSteps;
+			sourceTree = "<group>";
+		};
+		C2F1920527A67E9900D18CD6 /* FoundMatch */ = {
+			isa = PBXGroup;
+			children = (
+				C2F1920627A67EB300D18CD6 /* MatchFound.swift */,
+			);
+			path = FoundMatch;
 			sourceTree = "<group>";
 		};
 		FC0ACCEEE51EB4EB950A44CA /* Frameworks */ = {
@@ -382,6 +393,7 @@
 				C274688E27A61F3D00E9BFB2 /* RoundedCorner.swift in Sources */,
 				C2F191FA27A66E0200D18CD6 /* DestPlansInfo.swift in Sources */,
 				C2F191ED27A6494A00D18CD6 /* GenderInfo.swift in Sources */,
+				C2F1920727A67EB300D18CD6 /* MatchFound.swift in Sources */,
 				C274686727A5FE3E00E9BFB2 /* ModelData.swift in Sources */,
 				C2F191F427A6654B00D18CD6 /* SelectedBtn.swift in Sources */,
 				C2F191E927A645E500D18CD6 /* UserInfo.swift in Sources */,

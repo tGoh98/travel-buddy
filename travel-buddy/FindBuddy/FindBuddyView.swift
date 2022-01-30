@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct FindBuddyView: View {
-    @State private var step: Int = 0
+    @Binding var buddyStep: Int
     
     var body: some View {
-        if (step == 0) {
-            FBIntro(step: $step)
-        } else if (step == 1) {
-            UserInfo(step: $step)
+        if (buddyStep == 0) {
+            FBIntro(step: $buddyStep)
+        } else if (buddyStep == 1) {
+            UserInfo(step: $buddyStep)
+        } else if (buddyStep == 2) {
+            Text("Match found")
         }
         else {
             Text("Unrecognized step")
@@ -24,6 +26,6 @@ struct FindBuddyView: View {
 
 struct FindBuddy_Previews: PreviewProvider {
     static var previews: some View {
-        FindBuddyView()
+        FindBuddyView(buddyStep: .constant(0))
     }
 }
